@@ -9,11 +9,12 @@ public class mPlacesContract {
 
     public static class Place
     {
-        public static final String TABLE="places";
-        public static final String AUTHORITY="com.clm.myplaces";
-        public static final Uri CONTENT_URI = Uri.parse("content://"+AUTHORITY+'/'+TABLE);
-        public static final String NAME="name";
-        public static final String ADDRESS="address";
+        public static  String TABLE="places";
+        public static  String AUTHORITY="com.clm.myplaces";
+        public static  Uri CONTENT_URI = Uri.parse("content://"+AUTHORITY+'/'+TABLE);
+        public static  String NAME="name";
+        public static  String ADDRESS="address";
+        public static  String IMAGE="image";
 
 
 
