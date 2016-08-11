@@ -6,6 +6,8 @@ import android.net.Uri;
  * Created by CLM on 09/08/2016.
  */
 public class mPlacesContract {
+    
+    //Content Provider Contract for other apps
 
     public static class Place
     {
