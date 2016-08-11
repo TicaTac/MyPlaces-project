@@ -10,6 +10,9 @@ public class aMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // get data from HTTP to JSON + parse the JSON in Service
+        // 
+
 
 
 

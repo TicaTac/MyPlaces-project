@@ -1,8 +1,9 @@
 package com.clm.myplaces;
 
 import android.app.IntentService;
+import android.content.ContentValues;
 import android.content.Intent;
-import android.content.Context;
+import android.net.Uri;
 
 /**
  * An {@link IntentService} subclass for handling asynchronous task requests in
@@ -30,6 +31,10 @@ public class mWebGetService extends IntentService {
             jsonHelper= new mGetJsonHelper();
             jsonHelper.getJsonQuery(mConstants.QUERY_URL_HTTPS+query+mConstants.QUERY_URL_KEY);
 
+
+            ContentValues cv=null;
+            Uri uri = mPlacesContract.Place.CONTENT_URI;
+            getContentResolver().insert(uri,cv);
         }
     }
 
